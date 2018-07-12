@@ -1,0 +1,329 @@
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+label{
+  font-weight: normal;
+  font-size: 14px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+.helper-box {
+  max-width: 650px;
+  margin: 0 auto;
+  border: 1px solid #eee;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.grey{
+  color: #aaa;
+}
+
+.nav>li.active>a {
+text-decoration: none;
+color: white;
+/*background-color: #eee;*/
+}
+
+.nav>li>a:hover{
+  background-color: transparent !important;
+}
+
+ul.nav li a{ 
+  background-color: transparent !important;
+}
+
+ul.nav li a:hover{ 
+  background-color: transparent !important;
+}
+
+ul.nav li a:visited{ 
+  background-color: transparent !important;
+}
+
+ul.nav li a:active{ 
+  background-color: transparent !important;
+}
+
+ul.nav li ul.nav li a:hover{ 
+  background-color: transparent !important;
+}
+
+.wtable{
+  background-color: white;
+  margin-top: 20px;
+  border-collapse: separate;
+  border-radius: 4px 4px 0 0;
+  border-color: transparent;
+  border-spacing: 0;
+}
+.table>tbody>tr>td{
+  padding:16px;
+  border-bottom: 1px solid #e8e8e8;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  background-color: white;
+}
+.table>thead>tr>th{
+  background: #fafafa;
+  color: rgba(0, 0, 0, 0.85);    
+  font-weight: 500;
+  border-top:none;
+  border-left:none;
+  padding:16px;
+  border-right:none;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.table>tbody>tr:hover>td{
+  background: #e6f7ff;
+}
+
+.table>tfoot>tr>td{
+  background: white;
+  color: rgba(0, 0, 0, 0.85);    
+  font-weight: 500;
+  border-top:none;
+  border-left:none;
+  padding:16px;
+  border-right:none;
+  border-bottom: none;
+}
+
+.panel {
+  margin: 10px;
+  border:none;
+}
+
+.panel .panel-heading {
+  background: none;
+  font-size: 18px;
+}
+
+hr{
+  margin: 10px 0;
+}
+
+.default-container{
+  max-width: 100%;
+}
+
+.nav-tabs.nav-justified>li>a {
+  color: #000 !important;
+}
+
+.nav-tabs.nav-justified>.active>a{
+  color: #853B3D !important;
+}
+
+.create-btn{
+  float: right;
+  width: 98px;
+  background-color: #1890ff !important;
+  border-color: #1890ff !important;
+  cursor: pointer;
+}
+
+.page-head-title{
+  padding-top: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.85);
+  float: left;
+}
+.panel-default>.panel-heading{
+  border:none;
+}
+
+.badge-style{
+  background-color: red;
+}
+
+.sidebar-icons{
+  width: 20px;
+  margin-right: 8px;
+}
+
+.auto-refresh-btn{
+  margin-right: 9px;
+  margin-top: 4px;
+  padding: 4px 9px !important;
+}
+
+.form-control{
+  color: rgba(0, 0, 0, 0.65);
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: none;
+  font-size: 12px;
+}
+.form-control:focus{
+  border-color: #40a9ff;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+.btn{
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.btn-default{
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: #fff;
+  border-color: #d9d9d9;
+
+}
+
+.btn-default:hover{
+  color: #40a9ff;
+  background-color: #fff;
+  border-color: #40a9ff;
+  outline: none;
+}
+.btn-default:active, .btn-default:focus{
+  color: #096dd9 !important;
+    background-color: #fff !important;
+    border-color: #096dd9 !important;
+    outline: none !important;
+}
+.dropdown-menu{
+  font-size: 12px;
+  background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border: none;
+}
+
+.dropdown-menu>li>a{
+  line-height: 30px;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+  background-color: #e6f7ff;
+}
+
+.input-group-btn .glyphicon{
+  line-height: 17px;
+}
+.create-btn-align{
+  padding-top: 20px;
+}
+
+.login-btn:hover, .login-btn:active, .login-btn:focus, .create-btn:hover, .create-btn:active, .create-btn:focus{
+    background-color: #1890ff !important;
+    color: white !important;
+    background-color: #40a9ff !important;
+    border-color: #40a9ff !important;
+    
+  }
+.new-main-layout{
+  margin: 24px 24px 0px 16px;
+}
+.reports .panel{
+  border: none;
+  color: rgba(0, 0, 0, 0.65);
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 2px;
+  transition: all .3s;
+  line-height: 1.5;
+}
+.reports .panel .panel-heading{
+  text-align: left;
+  background: #fff;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 0 24px;
+    border-radius: 2px 2px 0 0;
+    zoom: 1;
+    margin-bottom: -1px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.85);
+    min-height: 48px;
+    padding: 16px;
+}
+.uib-daypicker .btn-default{
+  border:none;
+}
+.uib-daypicker .btn-default:hover{
+  box-shadow: none;
+}
+.uib-datepicker-popup{
+  outline:none;
+}
