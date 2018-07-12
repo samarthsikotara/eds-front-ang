@@ -33,7 +33,7 @@ $ bower install
 $ grunt build
 ```
 
-- a To launch the application
+- To launch the application
 ```sh
 $ grunt serve
 ```
