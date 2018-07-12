@@ -20,13 +20,22 @@ $ cd `project-directory`
 ```sh
 $ npm install 
 ```
-- a shortcut for `grunt serve`
+
+- To install dependency bower packages for app
+
 ```sh
-$ npm start
+$ bower install
 ```
+
 - a shortcut for `grunt serve:dist` to minify the files for deployment
+
 ```sh
-$ npm run dist 
+$ grunt build
+```
+
+- a To launch the application
+```sh
+$ grunt serve
 ```
 
 
