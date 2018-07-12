@@ -38,6 +38,10 @@ $ grunt build
 $ grunt serve
 ```
 
+- Go to this url
+```sh
+$ http://localhost:9000/#/dashboard/tasks
+```
 
 **Note:**
 If you get this following error, 
