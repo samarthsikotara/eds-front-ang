@@ -16,6 +16,12 @@ $ sudo npm install -g bower
 ```sh
 $ cd `project-directory`
 ```
+- Clean your npm cache
+
+```sh
+$ npm cache clean --force
+```
+
 - bower install is ran from the postinstall
 ```sh
 $ npm install 
