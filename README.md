@@ -52,10 +52,8 @@ sudo chown -R [user name] ~/.config
 ```
 
 
-## Roadmap
+## Screenshots
 
-- Add sample AJAX calls and make the directives more modular
+- List of TODO Tasks
 
-### Automation tools
-
-- [Grunt](http://gruntjs.com/)
+![](https://www.dropbox.com/home/Screenshots?preview=Screen+Shot+2018-07-12+at+11.47.13+pm.png)

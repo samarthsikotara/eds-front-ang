@@ -12,6 +12,4 @@ angular
         return $scope.task = task
       }
     })
-
-    console.log($scope.task)
   }]);

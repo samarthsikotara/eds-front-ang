@@ -7,6 +7,9 @@ angular
   .module('centralApp')
   .controller('TaskCtrl', ['$scope','$state','$stateParams','toastr', '$localStorage', function ($scope,$state, $stateParams,toastr,$localStorage) {
     
+    if(!$localStorage.tasks){
+      $localStorage.tasks = []   
+    }
     $scope.tasks = $localStorage.tasks 
     
     if($stateParams.id && $stateParams.delete){

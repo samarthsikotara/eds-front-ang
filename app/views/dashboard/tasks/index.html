@@ -6,7 +6,7 @@
     </span>  
   </div>
   <div class="col-lg-6">
-    <span class="page-head-title">Tasks</span>
+    <span class="page-head-title">My Tasks</span>
   </div>
   <div class="col-lg-6">
     <div class="create-btn-align">
@@ -33,15 +33,15 @@
                 <th>Name</th>
                 <th>Description</th>
                 <th>Created At</th>
-                <th>Action</th>
+                <th></th>
               </tr>
             </thead>
             <tbody ui-sortable>
               <tr ng-repeat="task in tasks">
                 <td>{{task.id}}</td>
                 <td>{{task.name}}</td>
-                <td>{{task.createdAt | amDateFormat:'D MMM YYYY hh:mm a'}}</td>
                 <td>{{task.description}}</td>
+                <td>{{task.createdAt | amDateFormat:'D MMM YYYY hh:mm a'}}</td>
                 <td>
                   <div class="btn-group" uib-dropdown is-open="status.isopen">
                     <button id="single-button" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">

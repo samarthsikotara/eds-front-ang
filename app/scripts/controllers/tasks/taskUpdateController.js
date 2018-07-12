@@ -5,7 +5,7 @@
  */
 angular
   .module('centralApp')
-  .controller('TaskUpdateCtrl', ['$scope','$stateParams','toastr', '$localStorage', function ($scope,$state, $stateParams,toastr,$localStorage) {
+  .controller('TaskUpdateCtrl', ['$scope','$state', '$stateParams','toastr', '$localStorage', function ($scope,$state, $stateParams,toastr,$localStorage) {
     
     $localStorage.tasks.forEach(function(task){
       if(task.id == $stateParams.id){
