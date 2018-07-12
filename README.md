@@ -54,7 +54,8 @@ sudo chown -R [user name] ~/.config
 
 ## Screenshots
 
-- [TODO list page](https://www.dropbox.com/home/Screenshots?preview=Screen+Shot+2018-07-12+at+11.47.13+pm.png)
-- [Create New TODO](https://www.dropbox.com/home/Screenshots?preview=Screen+Shot+2018-07-12+at+11.47.37+pm.png)
-- [Update TODO](https://www.dropbox.com/home/Screenshots?preview=Screen+Shot+2018-07-12+at+11.48.19+pm.png)
-- [Re-arrange/re-order TODO list](https://www.dropbox.com/home/Screenshots?preview=Screen+Shot+2018-07-12+at+11.49.53+pm.png)
+- [TODO list page](https://www.dropbox.com/s/uotgrv29o7j9sb8/Screen%20Shot%202018-07-12%20at%2011.47.13%20pm.png?dl=0)
+- [Create New TODO](https://www.dropbox.com/s/ectz9a54gcdna3r/Screen%20Shot%202018-07-12%20at%2011.47.37%20pm.png?dl=0)
+- [Update TODO](https://www.dropbox.com/s/pkytu4dluvb2h9n/Screen%20Shot%202018-07-12%20at%2011.48.19%20pm.png?dl=0)
+- [TODO list actions](https://www.dropbox.com/s/np6fozch8zd7srl/Screen%20Shot%202018-07-13%20at%2012.01.43%20am.png?dl=0)
+- [Re-arrange/re-order TODO list](https://www.dropbox.com/s/vcoetr7rc1d32ti/Screen%20Shot%202018-07-12%20at%2011.49.53%20pm.png?dl=0)
