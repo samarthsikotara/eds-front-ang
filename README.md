@@ -54,6 +54,7 @@ sudo chown -R [user name] ~/.config
 
 ## Screenshots
 
-- List of TODO Tasks
-
-![](https://www.dropbox.com/home/Screenshots?preview=Screen+Shot+2018-07-12+at+11.47.13+pm.png)
+- [TODO list page](https://www.dropbox.com/home/Screenshots?preview=Screen+Shot+2018-07-12+at+11.47.13+pm.png)
+- [Create New TODO](https://www.dropbox.com/home/Screenshots?preview=Screen+Shot+2018-07-12+at+11.47.37+pm.png)
+- [Update TODO](https://www.dropbox.com/home/Screenshots?preview=Screen+Shot+2018-07-12+at+11.48.19+pm.png)
+- [Re-arrange/re-order TODO list](https://www.dropbox.com/home/Screenshots?preview=Screen+Shot+2018-07-12+at+11.49.53+pm.png)
