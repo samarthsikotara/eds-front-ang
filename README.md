@@ -46,7 +46,7 @@ $ grunt serve
 
 - Go to this url
 ```sh
-$ http://localhost:9000/#/dashboard/tasks
+$ http://localhost:9000/#/dashboard/projects
 ```
 
 **Note:**
