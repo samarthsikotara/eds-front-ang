@@ -5,12 +5,12 @@
  */
 angular
   .module('centralApp')
-  .controller('TaskUpdateCtrl', ['$scope','$state','$stateParams','toastr', 'ENV', 'EnumService', function ($scope,$state, $stateParams,toastr,ENV, EnumService) {
+  .controller('ProjectUpdateCtrl', ['$scope','$state','$stateParams','toastr', 'ENV', 'EnumService', function ($scope,$state, $stateParams,toastr,ENV, EnumService) {
     
-    var promise = EnumService.get_api(ENV.api_url+'/dashboard/tasks/'+ $stateParams.id);
+    var promise = EnumService.get_api(ENV.api_url+'/dashboard/projects/'+ $stateParams.id);
     promise.then(
       function(res) {
-        $scope.task = res.data.task;
+        $scope.project = res.data.project;
       },
       function(err) {
         console.log(err);
@@ -19,13 +19,13 @@ angular
       }
     )
 
-    $scope.save = function(task) {
-      var promise = EnumService.put_api(ENV.api_url+'/dashboard/tasks/'+$stateParams.id, {'task' : task});
+    $scope.save = function(project) {
+      var promise = EnumService.put_api(ENV.api_url+'/dashboard/projects/'+$stateParams.id, {'project' : project});
       promise.then(
         function(res) {
-          $state.go('dashboard.projects_show', {id: res.data.task.project_id}, {reload: true});
+          $state.go('dashboard.projects', {}, {reload: true});
           $scope.success = true
-          toastr.success("Task Updated")
+          toastr.success("Project Updated")
         },
         function(err) {
           console.log(err);
@@ -35,5 +35,4 @@ angular
         }
       )
     }
-    
   }]);

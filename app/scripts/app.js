@@ -52,6 +52,74 @@ angular
         }
     })
 
+      .state('dashboard.projects',{
+      templateUrl: 'views/dashboard/projects/index.html',
+      url: '/projects',
+      controller:'ProjectCtrl',
+      resolve: {
+        loadMyFiles:function($ocLazyLoad) {
+          return $ocLazyLoad.load({
+            name:'centralApp',
+            files:[
+              'scripts/components/enum_service.js',
+              'scripts/controllers/projects/projectController.js'
+            ]
+          })
+        }
+      }
+    })
+
+      .state('dashboard.projects_new',{
+      templateUrl: 'views/dashboard/projects/new.html',
+      url: '/projects/new',
+      controller:'ProjectNewCtrl',
+      resolve: {
+        loadMyFiles:function($ocLazyLoad) {
+          return $ocLazyLoad.load({
+            name:'centralApp',
+            files:[
+              'scripts/components/enum_service.js',
+              'scripts/controllers/projects/projectNewController.js'
+            ]
+          })
+        }
+      }
+    })
+
+      .state('dashboard.projects_update',{
+      templateUrl: 'views/dashboard/projects/new.html',
+      url: '/projects/:id/update',
+      controller:'ProjectUpdateCtrl',
+      resolve: {
+        loadMyFiles:function($ocLazyLoad) {
+          return $ocLazyLoad.load({
+            name:'centralApp',
+            files:[
+              'scripts/components/enum_service.js',
+              'scripts/controllers/projects/projectUpdateController.js'
+            ]
+          })
+        }
+      }
+    })
+
+      .state('dashboard.projects_show',{
+      templateUrl: 'views/dashboard/projects/show.html',
+      url: '/projects/:id',
+      controller:'ProjectShowCtrl',
+      resolve: {
+        loadMyFiles:function($ocLazyLoad) {
+          return $ocLazyLoad.load({
+            name:'centralApp',
+            files:[
+              'scripts/components/enum_service.js',
+              'scripts/controllers/projects/projectShowController.js'
+            ]
+          })
+        }
+      }
+    })
+
       .state('dashboard.tasks',{
       templateUrl: 'views/dashboard/tasks/index.html',
       url: '/tasks?id&delete',
@@ -61,6 +129,7 @@ angular
           return $ocLazyLoad.load({
             name:'centralApp',
             files:[
+              'scripts/components/enum_service.js',
               'scripts/controllers/tasks/taskController.js'
             ]
           })
@@ -70,13 +139,14 @@ angular
 
       .state('dashboard.tasks_new',{
       templateUrl: 'views/dashboard/tasks/new.html',
-      url: '/tasks/new',
+      url: '/tasks/new?project_id',
       controller:'TaskNewCtrl',
       resolve: {
         loadMyFiles:function($ocLazyLoad) {
           return $ocLazyLoad.load({
             name:'centralApp',
             files:[
+              'scripts/components/enum_service.js',
               'scripts/controllers/tasks/taskNewController.js'
             ]
           })
@@ -93,6 +163,7 @@ angular
           return $ocLazyLoad.load({
             name:'centralApp',
             files:[
+              'scripts/components/enum_service.js',
               'scripts/controllers/tasks/taskUpdateController.js'
             ]
           })
@@ -109,7 +180,25 @@ angular
           return $ocLazyLoad.load({
             name:'centralApp',
             files:[
+              'scripts/components/enum_service.js',
               'scripts/controllers/tasks/taskShowController.js'
+            ]
+          })
+        }
+      }
+    })
+
+      .state('login',{
+      templateUrl: 'views/login.html',
+      url: '/login?logout',
+      controller:'LoginCtrl',
+      resolve: {
+        loadMyFiles:function($ocLazyLoad) {
+          return $ocLazyLoad.load({
+            name:'centralApp',
+            files:[
+              'scripts/components/enum_service.js',
+              'scripts/controllers/loginController.js'
             ]
           })
         }

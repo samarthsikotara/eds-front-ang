@@ -1,0 +1,67 @@
+<div class="row page-head">
+  <div class="col-lg-12">
+    <span class="breadcrumbs">
+      <a ui-sref="dashboard.live">Home</a> / 
+      <a ui-sref="dashboard.projects" ui-sref-opts="{reload: true, inherit: false}">Projects</a>
+    </span>  
+  </div>
+  <div class="col-lg-6">
+    <span class="page-head-title">My Projects</span>
+  </div>
+  <div class="col-lg-6">
+    <div class="create-btn-align">
+      <a class="btn btn-primary create-btn" ui-sref="dashboard.projects_new">
+        <i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;
+        New
+      </a>
+    </div>
+  </div>
+</div>
+<div class="row main-layout">
+  <div class="col-lg-12">
+    <div class="panel panel-default">
+    
+      <div class="panel-body">
+        <div class="row">
+          
+        </div>
+        <div class="table-responsive">
+          <table class="wtable table table-striped table-bordered table-hover">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Completed?</th>
+                <th>Created At</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody ui-sortable>
+              <tr ng-repeat="project in projects">
+                <td>{{project.id}}</td>
+                <td>{{project.name}}</td>
+                <td>{{project.description}}</td>
+                <td>{{project.completed}}</td>
+                <td>{{project.created_at | amDateFormat:'D MMM YYYY hh:mm a'}}</td>
+                <td>
+                  <div class="btn-group" uib-dropdown is-open="status.isopen">
+                    <button id="single-button" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
+                      Actions<span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+                      <li role="menuitem"><a href="#/dashboard/projects/{{project.id}}">View</a></li>
+                      <li role="menuitem"><a href="#/dashboard/tasks/new?project_id={{project.id}}">Add Task</a></li>
+                      <li role="menuitem"><a href="#/dashboard/projects/{{project.id}}/update">Update</a></li>
+                      <li role="menuitem"><a href="#/dashboard/projects?id={{project.id}}&delete=true">Delete</a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -2,11 +2,11 @@
   <div class="col-lg-12">
     <span class="breadcrumbs">
       <a ui-sref="dashboard.live">Home</a> / 
-      <a ui-sref="dashboard.tasks" ui-sref-opts="{reload: true, inherit: false}">Tasks</a>
+      <a ui-sref="dashboard.projects" ui-sref-opts="{reload: true, inherit: false}">Projects</a>
     </span>  
   </div>
   <div class="col-lg-12">
-    <span class="page-head-title">Update Task</span>
+    <span class="page-head-title">Create Project</span>
   </div>
   
 </div>
@@ -22,20 +22,22 @@
             <form name="taskValidate" role="form" novalidate>
               <div class="form-group" ng-class="{ 'has-error' : taskValidate.name.$invalid && !taskValidate.name.$pristine }">
                 <label for="Name" class="control-label">Name</label>
-                 <input type="text" class="form-control" name="name" id="name" ng-model="task.name" required/>
+                 <input type="text" class="form-control" name="name" id="name" ng-model="project.name" required/>
                  <p ng-show="taskValidate.name.$invalid && !taskValidate.name.$pristine" class="help-block">name is required.</p>
               </div>
               <div class="form-group" ng-class="{ 'has-error' : taskValidate.description.$invalid && !taskValidate.description.$pristine }">
                 <label for="Name" class="control-label">Description</label>
-                 <textarea class="form-control" name="description" id="description" ng-model="task.description"></textarea>
+                 <textarea class="form-control" name="description" id="description" ng-model="project.description"></textarea>
                  <p ng-show="taskValidate.description.$invalid && !taskValidate.description.$pristine" class="help-block">Description is required.</p>
               </div>
+
               <div class="form-group">
                 <label for="Name" class="control-label">Completed?</label>
-                <input type="radio" ng-model="task.completed"  name="completed" id="completed" ng-value="true"> Yes
-                <input type="radio" ng-model="task.completed"  name="completed" id="completed" ng-value="false"> No
+                <input type="radio" ng-model="project.completed"  name="completed" id="completed" ng-value="true"> Yes
+                <input type="radio" ng-model="project.completed"  name="completed" id="completed" ng-value="false"> No
               </div>
-              <input type="submit" value="Submit" class="btn btn-default"  data-ng-disabled="taskValidate.$dirty && taskValidate.$invalid || taskValidate.name.$invalid" data-ng-click="save(task)"/>
+
+              <input type="submit" value="Submit" class="btn btn-default"  data-ng-disabled="taskValidate.$dirty && taskValidate.$invalid || taskValidate.name.$invalid" data-ng-click="save(project)"/>
             </form>
 
           </div>
