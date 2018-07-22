@@ -64,4 +64,4 @@ sudo chown -R [user name] ~/.config
 
 ## Screenshots
 
-- [Click to view screenshots](https://www.dropbox.com/sh/8cebggn4q473gy8/AADftphGr79kOtJbLNgOeSjza?dl=0)
+- [Click to view screenshots](https://www.dropbox.com/sh/t8a5k4d3ok4wjpg/AADsyZPvKK3JMb9Zutamc36Ka?dl=0)
