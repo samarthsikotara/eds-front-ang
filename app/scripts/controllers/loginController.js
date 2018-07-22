@@ -11,10 +11,10 @@ angular.module('centralApp')
      
      if($stateParams.logout && $cookies.get('token')){
       var auth = {'token' : $cookies.get('token')}
-      var logout_promise = EnumService.post_api(ENV.api_url+'/dashboard/logout', auth);
+      var logout_promise = EnumService.post_api(ENV.api_url+'/api/logout', auth);
       logout_promise.then(
         function(res) {
-          ['token','name', 'uuid', 'email'].forEach(function(key){
+          ['token','name', 'uuid'].forEach(function(key){
             $cookies.remove(key)
           })
           $scope.success = true
@@ -29,16 +29,15 @@ angular.module('centralApp')
      }
 
      $scope.save = function(auth) {
-      var promise = EnumService.post_api(ENV.api_url+'/dashboard/login', auth);
+      var promise = EnumService.post_api(ENV.api_url+'/api/login', auth);
       promise.then(
         function(res) {
           $cookies.put('token',res.data.token);
-          $cookies.put('name',res.data.user.name);
-          $cookies.put('email',res.data.user.email);
-          $cookies.put('uuid',res.data.user.uuid);
-          $state.go('dashboard.projects', {}, {reload: true})
+          $cookies.put('name',res.data.username);
+          $cookies.put('uuid',res.data.uuid);
+          $state.go('dashboard.students', {}, {reload: true})
           $scope.success = true
-          toastr.success("Welcome "+res.data.user.name)
+          toastr.success("Welcome "+res.data.username)
         },
         function(err) {
           console.log(err);

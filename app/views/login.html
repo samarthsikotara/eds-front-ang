@@ -67,7 +67,7 @@
             <form name="loginValidate" role="form" novalidate>
               <fieldset>
                 <div class="form-group" ng-class="{ 'has-error' : loginValidate.name.$invalid && !loginValidate.name.$pristine }">
-                  <input class="form-control" placeholder="Email" name="email" type="text" ng-model="auth.email" autofocus required/>
+                  <input class="form-control" placeholder="Email" name="username" type="text" ng-model="auth.username" autofocus required/>
                   <p ng-show="loginValidate.name.$invalid && !loginValidate.name.$pristine" class="help-block">username is required.</p>
                 </div>
                 <div class="form-group" ng-class="{ 'has-error' : loginValidate.password.$invalid && !loginValidate.password.$pristine }">
@@ -78,10 +78,6 @@
                       <input name="remember" type="checkbox" value="Remember Me">Remember Me
                   </label>
                 </div>
-                <!-- <div class="fpassword-center">
-                  <a href="#/forgot-password">Forgot password?</a>
-                </div> -->
-                <!-- Change this to a button or input when using this as a form -->
                 <input type="submit" value="Login" class="btn btn-default btn-block login-btn"  data-ng-disabled="loginValidate.$dirty && loginValidate.$invalid || loginValidate.username.$dirty && loginValidate.username.$invalid" data-ng-click="save(auth)"/>
               </fieldset>
             </form>

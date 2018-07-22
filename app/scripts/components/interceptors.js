@@ -3,7 +3,7 @@
 
   angular
     .module('centralApp')
-    .factory('httpAuthInterceptor', ['$q','$location','$window','$injector', 'toastr', '$cookies', '$state', function ($q, $location, $window, $injector ,toastr, $cookies, $state) {
+    .factory('httpAuthInterceptor', ['$q','$location','$window','$injector', '$cookies', '$state', function ($q, $location, $window, $injector , $cookies, $state) {
       return {
         request: function(config){
           config.headers['Authorization'] = $cookies.get('token');

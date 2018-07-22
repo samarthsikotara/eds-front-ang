@@ -6,6 +6,7 @@
     "url": "https://github.com/samarthsikotara/sb-admin-angular"
   },
   "dependencies": {
+    "angular-material": "^1.1.10",
     "angular-toastr": "^2.1.1",
     "browser-sync-ui": "^0.6.3",
     "imagemin": "^5.3.1"

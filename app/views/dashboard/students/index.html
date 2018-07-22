@@ -1,0 +1,53 @@
+<div class="row page-head">
+  <div class="col-lg-12">
+    <span class="breadcrumbs">
+      <a ui-sref="dashboard.live">Home</a> / 
+      <a ui-sref="dashboard.projects" ui-sref-opts="{reload: true, inherit: false}">Students</a>
+    </span>  
+  </div>
+  <div class="col-lg-6">
+    <span class="page-head-title">Students</span>
+  </div>
+  <div class="col-lg-6">
+    
+  </div>
+</div>
+<div class="row main-layout">
+  <div class="row">
+    <div class="col-lg-3">
+      <div class="form-group">
+        <input type="text" class="form-control" ng-model="student.keyword" ng-change="search(student.keyword)" ng-model-options="{debounce: 750}" placeholder="Search by student name..." />
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-12">
+    <div class="panel panel-default">
+    
+      <div class="panel-body">
+        <div class="row">
+          
+        </div>
+        <div class="table-responsive">
+          <table class="wtable table table-striped table-bordered table-hover">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>DOB</th>
+                <th>Created At</th>
+              </tr>
+            </thead>
+            <tbody ui-sortable>
+              <tr ng-repeat="student in students">
+                <td>{{student.id}}</td>
+                <td>{{student.name}}</td>
+                <td>{{student.birthdate | amDateFormat:'D MMM YYYY hh:mm a'}}</td>
+                <td>{{student.createdAt | amDateFormat:'D MMM YYYY hh:mm a'}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
