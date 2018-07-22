@@ -1,4 +1,4 @@
-## TODO ADMIN v1.0 written in AngularJS
+## SCHOOL ADMIN v1.0 written in AngularJS
 
 ## Installation
 ####1. Clone this project or Download that ZIP file
@@ -46,7 +46,7 @@ $ grunt serve
 
 - Go to this url
 ```sh
-$ http://localhost:9000/#/dashboard/projects
+$ http://localhost:9000/#/dashboard/students
 ```
 
 **Note:**
